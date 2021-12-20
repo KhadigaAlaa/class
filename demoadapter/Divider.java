@@ -15,6 +15,7 @@ public class Divider implements DivideInterface
     {
         if(TypeOfOperations.equalsIgnoreCase("*"))
         {
+            divide_Adapter = new DivideAdapter(TypeOfOperations);
             System.out.print("Multiply Operation : ");
             return divide_Adapter.Divide(number1 , number2 , TypeOfOperations);
         }
